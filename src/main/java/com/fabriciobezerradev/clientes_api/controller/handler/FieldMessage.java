@@ -1,4 +1,4 @@
-package com.fabriciobezerradev.clientes_api.controller.exceptions;
+package com.fabriciobezerradev.clientes_api.controller.handler;
 
 public class FieldMessage {
     private String fieldName;
@@ -13,7 +13,7 @@ public class FieldMessage {
         return fieldName;
     }
 
-    public String getMessage() {
+    public String getMessage() {    
         return message;
     }
 
