@@ -11,8 +11,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.fabriciobezerradev.clientes_api.controller.StandardError;
-import com.fabriciobezerradev.clientes_api.controller.ValidationError;
+import com.fabriciobezerradev.clientes_api.controller.exceptions.StandardError;
+import com.fabriciobezerradev.clientes_api.controller.exceptions.ValidationError;
 import com.fabriciobezerradev.clientes_api.service.exceptions.DatabaseException;
 import com.fabriciobezerradev.clientes_api.service.exceptions.ResourceNotFoundException;
 

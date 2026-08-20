@@ -1,4 +1,4 @@
-package com.fabriciobezerradev.clientes_api.controller.handler;
+package com.fabriciobezerradev.clientes_api.controller.exceptions;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ public class ValidationError extends StandardError {
         return errors;
     }
 
-    public void addError(String name, String message) {
-        FieldMessage err = new FieldMessage(name, message);
+    public void addError(String fieldName, String message) {
+        FieldMessage err = new FieldMessage(fieldName, message);
         errors.add(err);
     }
 }
