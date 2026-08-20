@@ -1,4 +1,4 @@
-package com.fabriciobezerradev.clientes_api.controller.exceptions;
+package com.fabriciobezerradev.clientes_api.controller.handler;
 
 import java.time.Instant;
 
