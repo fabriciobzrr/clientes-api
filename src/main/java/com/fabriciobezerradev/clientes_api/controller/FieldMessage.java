@@ -1,16 +1,16 @@
 package com.fabriciobezerradev.clientes_api.controller;
 
 public class FieldMessage {
-    private String name;
+    private String fieldName;
     private String message;
     
     public FieldMessage(String name, String message) {
-        this.name = name;
+        this.fieldName = name;
         this.message = message;
     }
 
     public String getName() {
-        return name;
+        return fieldName;
     }
 
     public String getMessage() {
