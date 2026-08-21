@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PastOrPresent;
 import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 
 import com.fabriciobezerradev.clientes_api.entity.Client;
@@ -29,7 +30,7 @@ public class ClientDTO {
     @NotNull(message = "Campo requerido")
     private LocalDate birthDate;
     
-    @Positive(message = "Quantidade de dependentes dever ser positiva")
+    @PositiveOrZero(message = "Quantidade de dependentes dever ser positiva")
     @NotNull(message = "Campo requerido")
     private Integer children;
 
